@@ -4,3 +4,87 @@
     width: 300px;
     margin: 0 auto;
 }
+/* =========================================================
+   ESTILOS DE ACCESIBILIDAD Y PALETA DE MARCA (WCAG)
+   ========================================================= */
+
+/* 1. Indicador visual obligatorio para recorrido con teclado */
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid #1E7A4F; /* Verde Ruta */
+  outline-offset: 2px;
+}
+
+/* 2. Fondo general y colores de texto principales */
+body {
+  background-color: #FAF6EF; /* Crema */
+  color: #14213D; /* Azul Noche (Contraste 14.83:1) */
+}
+
+header {
+  background-color: #14213D; /* Azul Noche */
+  color: #FFFFFF; /* Blanco (Contraste 15.97:1) */
+  padding: 1.5rem;
+}
+
+header a {
+  color: #F39A2B; /* Naranja Pedal sobre Azul Noche */
+  font-weight: bold;
+}
+
+h1, h2 {
+  color: #14213D; /* Azul Noche */
+}
+
+header h1 {
+  color: #FFFFFF; /* Blanco dentro del encabezado oscuro */
+}
+
+/* 3. Etiquetas y textos secundarios */
+label {
+  color: #14213D; /* Azul Noche */
+  font-weight: bold;
+}
+
+::placeholder {
+  color: #5B6470; /* Gris Asfalto (Contraste 5.57:1) */
+}
+
+/* 4. Unificación visual para los nuevos campos (celular, cantidad, comentarios) */
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="tel"],
+.form-control input[type="date"],
+.form-control input[type="number"],
+.form-control select,
+.form-control textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid #5B6470; /* Gris Asfalto */
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #14213D;
+  font-family: inherit;
+}
+
+/* 5. Botón principal (Blanco sobre Verde Ruta - Contraste 5.31:1) */
+.form-control button[type="submit"] {
+  background-color: #1E7A4F; /* Verde Ruta */
+  color: #FFFFFF; /* Blanco */
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-control button[type="submit"]:hover {
+  background-color: #14213D; /* Azul Noche al pasar el cursor */
+}
