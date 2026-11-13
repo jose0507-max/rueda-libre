@@ -1,0 +1,10 @@
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color: gray;
+}
+a:focus{
+    border-bottom: 1px solid black;
+}
