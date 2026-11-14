@@ -35,3 +35,29 @@ body.fondo-oscuro a {
     color: var(--color-naranja-pedal);
 }
 
+.flota{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: var(--espacio-md);
+    height: 100%;
+    }
+
+
+.carg-img{
+    width: 100%;
+    max-width: 450px; /* Evita que se estire demasiado en pantallas de PC */
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: var(--espacio-md);
+}
+.card{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
